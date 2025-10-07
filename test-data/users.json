@@ -1,0 +1,16 @@
+[
+  {
+    "gender": "Female",
+    "firstName": "Aniqa",
+    "lastName": "Rasheed",
+    "emailPrefix": "Aniqa.Rasheed",
+    "password": "Password123!"
+  },
+  {
+    "gender": "Male",
+    "firstName": "Test",
+    "lastName": "User",
+    "emailPrefix": "Test.User",
+    "password": "Password123!"
+  }
+]
