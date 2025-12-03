@@ -1,0 +1,26 @@
+name: Playwright Tests
+
+on:
+  push:
+    branches:
+      - main
+      - staging
+      - qa
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Playwright Tests
+        run: |
+          npx playwright test --reporter=line,json --output=./test-results
