@@ -17,8 +17,7 @@ npm test
 # 4) If want to run in headed (Browser) mode
 npm run test:headed
 
-# 5) View report
-npm run show-report
+
 ```
 
 - One‑command execution for CI:  
