@@ -24,3 +24,8 @@ jobs:
       - name: Run Playwright Tests
         run: |
           npx playwright test --reporter=line,json --output=./test-results
+      - name: Send Results to n8n
+        run: |
+          curl -X POST "https://YOUR-N8N-URL/webhook/results" \
+          -H "Content-Type: application/json" \
+          -d "{\"status\": \"completed\", \"branch\": \"${{ github.ref }}\", \"commit\": \"${{ github.sha }}\"}"
