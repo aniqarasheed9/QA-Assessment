@@ -10,7 +10,6 @@ npm ci
 
 # 2) Install Playwright browsers (first time only)
 npm run install-browsers
-
 # 3) Run all tests
 npm test
 
